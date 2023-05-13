@@ -14,6 +14,11 @@
       <h1>seneca.</h1>
       <img id="banner" class="img-fluid" src="https://test-website.taruns12.repl.co/static/banner.jpg" alt="Peak your life">
       <p>Hello there! Welcome to seneca.</p>
+      <div>
+        {%for value in det%}
+          {{value['name']}}
+        {%endfor%}
+      </div>
       <div class="ms-5">
         <button class="btn btn-primary btn-large">Log In</button>
         <button class="btn btn-primary btn-large">Sign Up</button>
